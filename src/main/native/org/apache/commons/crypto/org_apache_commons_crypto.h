@@ -220,6 +220,7 @@ static FARPROC WINAPI do_dlsym(JNIEnv *env, HMODULE handle, LPCSTR symbol) {
 #define AES_CTR 0
 #define AES_CBC 1
 #define AES_GCM 2
+#define AES_CFB 3
 
 #define NOPADDING 0
 #define PKCS5PADDING 1

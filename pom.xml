@@ -143,7 +143,7 @@ The following provides more details on the included cryptographic software:
     <!-- The property "target.name" is used to specify the ant target, The All target will use
     OsInfo.java to detect the OS info and arch to generate the native binary for detected platform.
     User is able to specify the platform by maven profiles.-->
-    <target.name>all</target.name>
+    <target.name>win64</target.name>
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
     <junit.version>4.12</junit.version>
     <commons-logging.version>1.1.3</commons-logging.version>

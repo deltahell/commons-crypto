@@ -226,8 +226,8 @@ LIBNAME   := $($(os_arch)_LIBNAME)
 COMMONS-CRYPTO_FLAGS := $($(os_arch)_COMMONS-CRYPTO_FLAGS)
 
 
-CFLAGS := $(CFLAGS) -Ilib/include -I/usr/include -I"$(SRC_NATIVE)/org/apache/commons/crypto/"
-CXXFLAGS := $(CXXFLAGS) -Ilib/include  -I/usr/include
+CFLAGS := $(CFLAGS) -Ilib/include -I/usr/include -I"$(SRC_NATIVE)/org/apache/commons/crypto/" -DOPENSSL_SYS_WIN32
+CXXFLAGS := $(CXXFLAGS) -Ilib/include  -I/usr/include -DOPENSSL_SYS_WIN32
 ifneq ($(jni_include),)
 CFLAGS := $(CFLAGS) -I"$(jni_include)" -I"$(TARGET)/jni-classes/org/apache/commons/crypto/cipher" -I"$(TARGET)/jni-classes/org/apache/commons/crypto/random"
 CXXFLAGS := $(CXXFLAGS) -I"$(jni_include)" -I"$(TARGET)/jni-classes/org/apache/commons/crypto/cipher" -I"$(TARGET)/jni-classes/org/apache/commons/crypto/random"
